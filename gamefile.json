@@ -145,11 +145,11 @@
       }
     }
   },
-  "cards": {
-    "dataUrl": "https://github.com/LucasJeanneau/inazumatcgarena/cards.json",
-    "cardBack": "https://inazumaelevencartas.com/galeria/1-1%20ESP/sobre.png"
-  },
-  "defaultRessources": {
-    "decksUrl": "https://github.com/LucasJeanneau/inazumatcgarena/decks.json"
-  }
+"cards": {
+  "dataUrl": "https://raw.githubusercontent.com/LucasJeanneau/inazumatcgarena/main/cards.json",
+  "cardBack": "https://inazumaelevencartas.com/galeria/1-1%20ESP/sobre.png"
+},
+"defaultRessources": {
+  "decksUrl": "https://raw.githubusercontent.com/LucasJeanneau/inazumatcgarena/main/decks.json"
+}
 }
