@@ -2,26 +2,19 @@
   "name": "Inazuma Eleven Classique - Football Frontier",
   "menuBackgroundImage": "https://inazumaelevencartas.com/galeria/1-1%20ESP/sobre.png",
   "deckBuilding": {
-    "mainFilters": [
-      "type",
-      "position",
-      "element",
-      "team"
-    ],
+    "mainFilters": ["type", "position", "element", "team"],
     "formats": [
       {
         "title": "Standard",
         "gameplay": "Standard",
-        "customCategories": [
-          "File"
-        ],
+        "customCategories": ["File"],
         "deckRuleset": "Standard"
       }
     ],
     "deckRulesets": {
       "Standard": {
         "general": {
-          "min": 25,
+          "min": 20,
           "maxPerCard": 3
         },
         "categories": [
@@ -46,9 +39,7 @@
         "drawOnStart": true,
         "drawPerTurn": 1
       },
-      "countersStartingValues": [
-        0
-      ],
+      "countersStartingValues": [0],
       "defaultNotes": "Buts : 0\nTours restants : 6",
       "sections": {
         "layout": {
@@ -60,11 +51,14 @@
                 {
                   "section": "File",
                   "style": {
-                    "width": "18%"
+                    "width": "160px"
                   }
                 },
                 {
                   "direction": "column",
+                  "style": {
+                    "flex": 1
+                  },
                   "content": [
                     {
                       "section": "FW"
@@ -80,7 +74,7 @@
                 {
                   "section": "GK",
                   "style": {
-                    "width": "18%"
+                    "width": "160px"
                   }
                 }
               ]
@@ -102,38 +96,38 @@
           "File": {
             "isHidden": "opponent-only",
             "height": "MEDIUM",
-            "alignment": "CENTER",
-            "displayedTitle": "File (10 Field Characters)"
+            "alignment": "DECK",
+            "displayedTitle": "File (Deck 2)"
           },
           "GK": {
             "isHidden": "no",
             "height": "MEDIUM",
             "alignment": "CENTER",
-            "displayedTitle": "Gardien (GK)"
+            "displayedTitle": "Gardien"
           },
           "DF": {
             "isHidden": "no",
             "height": "MEDIUM",
             "alignment": "CENTER",
-            "displayedTitle": "Défense (DF)"
+            "displayedTitle": "Défense"
           },
           "MF": {
             "isHidden": "no",
             "height": "MEDIUM",
             "alignment": "CENTER",
-            "displayedTitle": "Milieu (MF)"
+            "displayedTitle": "Milieu"
           },
           "FW": {
             "isHidden": "no",
             "height": "MEDIUM",
             "alignment": "CENTER",
-            "displayedTitle": "Attaque (FW)"
+            "displayedTitle": "Attaque"
           },
           "Hissatsu": {
             "isHidden": "no",
             "height": "SMALL",
             "alignment": "CENTER",
-            "displayedTitle": "Techniques jouées"
+            "displayedTitle": "Techniques"
           },
           "Discard": {
             "isHidden": "no",
@@ -145,11 +139,11 @@
       }
     }
   },
-"cards": {
-  "dataUrl": "https://raw.githubusercontent.com/LucasJeanneau/inazumatcgarena/main/cards.json",
-  "cardBack": "https://inazumaelevencartas.com/galeria/1-1%20ESP/sobre.png"
-},
-"defaultRessources": {
-  "decksUrl": "https://raw.githubusercontent.com/LucasJeanneau/inazumatcgarena/main/decks.json"
-}
+  "cards": {
+    "dataUrl": "https://raw.githubusercontent.com/LucasJeanneau/inazumatcgarena/main/cards.json",
+    "cardBack": "https://inazumaelevencartas.com/galeria/1-1%20ESP/sobre.png"
+  },
+  "defaultRessources": {
+    "decksUrl": "https://raw.githubusercontent.com/LucasJeanneau/inazumatcgarena/main/decks.json"
+  }
 }
