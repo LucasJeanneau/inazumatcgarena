@@ -1,0 +1,155 @@
+{
+  "name": "Inazuma Eleven Classique - Football Frontier",
+  "menuBackgroundImage": "https://inazumaelevencartas.com/galeria/1-1%20ESP/sobre.png",
+  "deckBuilding": {
+    "mainFilters": [
+      "type",
+      "position",
+      "element",
+      "team"
+    ],
+    "formats": [
+      {
+        "title": "Standard",
+        "gameplay": "Standard",
+        "customCategories": [
+          "File"
+        ],
+        "deckRuleset": "Standard"
+      }
+    ],
+    "deckRulesets": {
+      "Standard": {
+        "general": {
+          "min": 25,
+          "maxPerCard": 3
+        },
+        "categories": [
+          {
+            "category": "File",
+            "min": 10,
+            "max": 10
+          }
+        ]
+      }
+    }
+  },
+  "gameplay": {
+    "Standard": {
+      "mulligan": {
+        "startingHandSize": 5,
+        "mulliganCount": {
+          "max": 1
+        }
+      },
+      "newTurn": {
+        "drawOnStart": true,
+        "drawPerTurn": 1
+      },
+      "countersStartingValues": [
+        0
+      ],
+      "defaultNotes": "Buts : 0\nTours restants : 6",
+      "sections": {
+        "layout": {
+          "direction": "column",
+          "content": [
+            {
+              "direction": "row",
+              "content": [
+                {
+                  "section": "File",
+                  "style": {
+                    "width": "18%"
+                  }
+                },
+                {
+                  "direction": "column",
+                  "content": [
+                    {
+                      "section": "FW"
+                    },
+                    {
+                      "section": "MF"
+                    },
+                    {
+                      "section": "DF"
+                    }
+                  ]
+                },
+                {
+                  "section": "GK",
+                  "style": {
+                    "width": "18%"
+                  }
+                }
+              ]
+            },
+            {
+              "direction": "row",
+              "content": [
+                {
+                  "section": "Hissatsu"
+                },
+                {
+                  "section": "Discard"
+                }
+              ]
+            }
+          ]
+        },
+        "sectionsDict": {
+          "File": {
+            "isHidden": "opponent-only",
+            "height": "MEDIUM",
+            "alignment": "CENTER",
+            "displayedTitle": "File (10 Field Characters)"
+          },
+          "GK": {
+            "isHidden": "no",
+            "height": "MEDIUM",
+            "alignment": "CENTER",
+            "displayedTitle": "Gardien (GK)"
+          },
+          "DF": {
+            "isHidden": "no",
+            "height": "MEDIUM",
+            "alignment": "CENTER",
+            "displayedTitle": "Défense (DF)"
+          },
+          "MF": {
+            "isHidden": "no",
+            "height": "MEDIUM",
+            "alignment": "CENTER",
+            "displayedTitle": "Milieu (MF)"
+          },
+          "FW": {
+            "isHidden": "no",
+            "height": "MEDIUM",
+            "alignment": "CENTER",
+            "displayedTitle": "Attaque (FW)"
+          },
+          "Hissatsu": {
+            "isHidden": "no",
+            "height": "SMALL",
+            "alignment": "CENTER",
+            "displayedTitle": "Techniques jouées"
+          },
+          "Discard": {
+            "isHidden": "no",
+            "height": "SMALL",
+            "alignment": "CENTER",
+            "displayedTitle": "Cimetière"
+          }
+        }
+      }
+    }
+  },
+  "cards": {
+    "dataUrl": "https://github.com/LucasJeanneau/inazumatcgarena/cards.json",
+    "cardBack": "https://inazumaelevencartas.com/galeria/1-1%20ESP/sobre.png"
+  },
+  "defaultRessources": {
+    "decksUrl": "https://github.com/LucasJeanneau/inazumatcgarena/decks.json"
+  }
+}
